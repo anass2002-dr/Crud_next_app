@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Model/user.js", "app/lib/connectDB.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/Model/user.js", "app/lib/connectDB.js", "app/api/user/page.js"],
   "exclude": ["node_modules"]
 }

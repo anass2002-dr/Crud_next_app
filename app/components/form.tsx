@@ -11,22 +11,21 @@ export default function Form_html(){
     const age=target.elements.namedItem('age') as HTMLInputElement;
 
     const data={
-      first_name:first_name,
-      last_name:last_name,
-      age:age
+      first_name:first_name.value,
+      last_name:last_name.value,
+      age:age.value
     }
+    console.log(data)
     try{
       const resp=await fetch('../api/user',{
         method:"POST",
         body:JSON.stringify(data),
-        headers:{
-          "Content-type":"school app"
-        }
-      });
+        
+      })
       if(!resp.ok){
         throw new Error("HTTP error! status: " + resp.status);
       }
-      
+      console.log(resp.json)
     }
     catch(error){
       console.log("data is still on front end");
