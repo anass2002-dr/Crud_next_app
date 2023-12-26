@@ -7,11 +7,10 @@ import './page.module.css'
 export default function Home() {
   return (
     <>
-    <Header_app/>
     <main className='flex justify-center mt-5' >
     <Form_html/>
       
-      
+     <Link href="./user">go to user</Link> 
     </main>
     </>
   )
