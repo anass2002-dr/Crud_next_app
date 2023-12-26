@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { json } from "stream/consumers";
 export default function Form_html(){
   async function handleSubmit(e:React.FormEvent<HTMLFormElement>){
+    
     e.preventDefault();
     const target=e.currentTarget;
     const first_name=target.elements.namedItem('first_name') as HTMLInputElement;
