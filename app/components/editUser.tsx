@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { json } from "stream/consumers";
 
-export default function NewUser(){
+export default function EditUser({params}:any){
     const [first_name,setfirst_name]=useState<string>("")
     const [last_name,setlast_name]=useState<string>("")
     const [age,setage]=useState<number>()
